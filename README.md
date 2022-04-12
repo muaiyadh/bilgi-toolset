@@ -41,6 +41,8 @@ MATH 292 @ 27.04.2022 Çarşamba/Wednesday. Time: ['19:00:00']
 MECA 202 @ 29.04.2022 Cuma/Friday. Time: ['11:00:00']
 ```
 
+NOTE: Don't forget the space between the course code and the number. "MATH 292" is fine, "MATH292" is not.
+
 ### 4. Zoom recordings chat sync fix and autoscroll
 
 Lets you manually fix the sync between the Zoom recording and the chat messages.

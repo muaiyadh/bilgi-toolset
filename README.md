@@ -15,7 +15,7 @@ Displays courses as a List instead of the weird default Cards format.
 
 If this doesn't work, try modifying the delay at the bottom of the script (default: 750ms)
 
-### 2. Zoom Recordings scraper
+### 2. Zoom recordings info scraper
 
 Adds a button on the Zoom Recordings page to directly download info of all recordings of this course as a csv file.
 The info include: Recording link, recording password, meeting topic, total duration, recording start time, recording size.
@@ -41,7 +41,7 @@ MATH 292 @ 27.04.2022 Çarşamba/Wednesday. Time: ['19:00:00']
 MECA 202 @ 29.04.2022 Cuma/Friday. Time: ['11:00:00']
 ```
 
-### 4. Zoom Recordings chat sync fix and autoscroll
+### 4. Zoom recordings chat sync fix and autoscroll
 
 Lets you manually fix the sync between the Zoom recording and the chat messages.
 Also, automatically scrolls to the current chat message.

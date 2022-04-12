@@ -28,13 +28,13 @@ A Python script that takes the Excel file for exams dates and the courses names 
 
 Usage: open command prompt in the same folder as the script, then type:
 ```
-python3 exam_schedule_search.py -c "COURSES" -i "PATH TO EXCEL FILE"
+python3 3_exam_schedule_extractor.py -c "COURSES" -i "PATH TO EXCEL FILE"
 ```
 Replace COURSES with the names of courses want to search for. And replace PATH TO EXCEL FILE with the full path to the exams excel file.
 
 Example usage:
 ```
-python3 exam_schedule_search.py -c "MATH 292, EEEN 202, MECA 202" -i "C:/Users/USERNAME/Downloads/examschedulebycampusdatehourcourse4.xls"
+python3 3_exam_schedule_extractor.py -c "MATH 292, EEEN 202, MECA 202" -i "C:/Users/USERNAME/Downloads/examschedulebycampusdatehourcourse4.xls"
 
 EEEN 202 @ 25.04.2022 Pazartesi/Monday. Time: ['19:00:00']
 MATH 292 @ 27.04.2022 Çarşamba/Wednesday. Time: ['19:00:00']

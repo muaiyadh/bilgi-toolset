@@ -20,7 +20,7 @@ If this doesn't work, try modifying the delay at the bottom of the script (defau
 Adds a button on the Zoom Recordings page to directly download info of all recordings of this course as a csv file.
 The info include: Recording link, recording password, meeting topic, total duration, recording start time, recording size.
 
-NOTE: this tool should work fine, but due to the way it works, try avoid using abusing it _too_ much.
+NOTE: this tool should work fine, but due to the way it works, try avoid abusing it _too_ much.
 
 ### 3. Exam schedule search
 

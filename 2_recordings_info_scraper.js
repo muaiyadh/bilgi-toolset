@@ -164,11 +164,10 @@ if (!(window.top === window.self) && window.self.location.href.includes("applica
             Promise.all(promises).then(function(){
                 if (meetings_list.length == 0) {
                     addDownloadButton(rows);
-                    return -1;
+                    return;
+                } else {
+                    getPage(page + 1);
                 }
-                return page + 1;
-            }).then(nextPage => {
-                if(nextPage >= 0) getPage(nextPage);
             });
         });
     }

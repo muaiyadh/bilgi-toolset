@@ -148,13 +148,11 @@ if (!(window.top === window.self) && window.self.location.href.includes("applica
         let meetings_promise = getRecordingsList(page, scid, xsrf_token);
 
         meetings_promise.then(function(meetings_list) {
-            //console.log(meetings_list);
-            if (meetings_list.length == 0) {
-                addDownloadButton(rows);
-                return -1;
-            }
+            console.log(meetings_list);
+            let promises = [];
             for(let meeting of meetings_list){
                 let file_info_promise = getFileInfo(meeting, scid, xsrf_token);
+                promises.push(file_info_promise);
                 file_info_promise.then(data => {
                     if (data) {
                         rows.push(data);
@@ -162,8 +160,17 @@ if (!(window.top === window.self) && window.self.location.href.includes("applica
                     }
                 });
             }
-            return page + 1;
-        }).then(nextPage => {if(nextPage >= 0) getPage(nextPage);});
+
+            Promise.all(promises).then(function(){
+                if (meetings_list.length == 0) {
+                    addDownloadButton(rows);
+                    return -1;
+                }
+                return page + 1;
+            }).then(nextPage => {
+                if(nextPage >= 0) getPage(nextPage);
+            });
+        });
     }
 
     // Start the gathering process

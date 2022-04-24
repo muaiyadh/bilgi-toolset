@@ -36,7 +36,7 @@ function secondsToTime(seconds){
 
 // This function handels "HH:MM:SS" as well as "MM:SS" or "SS".
 // Source: https://stackoverflow.com/a/9640417/18429369
-function hmsToSecondsOnly(str) {
+function timeToSeconds(str) {
     var p = str.split(':'),
         s = 0, m = 1;
 

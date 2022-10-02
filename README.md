@@ -13,8 +13,6 @@ After installing Tampermonkey, click on the extension's icon and hit 'Create a n
 
 Displays courses as a List instead of the weird default Cards format.
 
-If this doesn't work, try modifying the delay at the bottom of the script (default: 750ms)
-
 ### 2. Zoom recordings info scraper
 
 Adds a button on the Zoom Recordings page to directly download info of all recordings of this course as a csv file.

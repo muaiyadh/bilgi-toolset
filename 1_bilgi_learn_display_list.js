@@ -32,7 +32,7 @@
         });
     }
     let listButtonCSS = 'ul.dropdown-menu-right > li:nth-child(2) > a:nth-child(1)'; // The List button CSS selector that's used to actually change
-    let firstCourseCSS = '#card-deck-14 > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > figure:nth-child(1) > figcaption:nth-child(3)'; // Used as an indicator that the page has fully loaded
+    let firstCourseCSS = '#card-deck-13 > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > figure:nth-child(1) > figcaption:nth-child(3)'; // Used as an indicator that the page has fully loaded
     waitForElm(listButtonCSS).then((elem) => {
         waitForElm(firstCourseCSS).then((elem2) => {
             setTimeout(function(){
